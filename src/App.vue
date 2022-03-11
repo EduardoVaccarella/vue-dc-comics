@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HeaderComics/>
+    <WallpaperComics/>
     <JumbotronComics/>
     <IconsComics/>
     <LinksComics/>
@@ -14,6 +15,7 @@ import JumbotronComics from './components/JumbotronComics.vue'
 import IconsComics from './components/IconsComics.vue'
 import LinksComics from './components/LinksComics.vue'
 import FooterComics from './components/FooterComics.vue'
+import WallpaperComics from './components/WallpaperComics.vue'
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     JumbotronComics,
     IconsComics,
     LinksComics,
-    FooterComics
+    FooterComics,
+    WallpaperComics
   }
 }
 </script>
