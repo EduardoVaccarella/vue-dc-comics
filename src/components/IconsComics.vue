@@ -4,7 +4,7 @@
           <ul>
             <li v-for="(icon,i) in icons" :key="i">
                 <div>
-                    <img :src="icon.img" alt="">
+                    <img :src="'../assets/' + icon.image" :alt="icons.image">
                 </div>
 
                 <div>
@@ -23,23 +23,23 @@ export default {
     return {
         icons: [
             {
-                img: '../assets/buy-comics-digital-comics.png',
+                image: 'buy-comics-digital-comics.png',
                 text: 'Digital Comics'
             },
             {
-                img: '../assets/buy-comics-merchandise.png',
+                image: 'buy-comics-merchandise.png',
                 text: 'DC Merchandise'
             },
             {
-                img: '../assets/buy-comics-subscriptions.png',
+                image: 'buy-comics-subscriptions.png',
                 text: 'Subscription'
             },
             {
-                img: '../assets/buy-comics-shop-locator.png',
+                image: 'buy-comics-shop-locator.png',
                 text: 'Comic Shop Locator'
             },
             {
-                img: '../assets/buy-dc-power-visa.png',
+                image: 'buy-dc-power-visa.png',
                 text: 'DC Power Visa'
             },
         ]
@@ -56,6 +56,7 @@ export default {
     background-color: #0C7CEC;
     display: flex;
     justify-content: center;
+    z-index: 1;
 
 
     .icons-width {
@@ -78,6 +79,10 @@ export default {
             text-transform: uppercase;
             display: flex;
             justify-content: space-around;
+
+            img {
+                width: 50%;
+            }
         }
     }
 }

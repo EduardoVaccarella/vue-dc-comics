@@ -3,6 +3,8 @@
     <HeaderComics/>
     <JumbotronComics/>
     <IconsComics/>
+    <LinksComics/>
+    <FooterComics/>
   </div>
 </template>
 
@@ -10,13 +12,17 @@
 import HeaderComics from './components/HeaderComics.vue'
 import JumbotronComics from './components/JumbotronComics.vue'
 import IconsComics from './components/IconsComics.vue'
+import LinksComics from './components/LinksComics.vue'
+import FooterComics from './components/FooterComics.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComics,
     JumbotronComics,
-    IconsComics
+    IconsComics,
+    LinksComics,
+    FooterComics
   }
 }
 </script>
